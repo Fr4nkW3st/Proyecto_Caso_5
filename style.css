@@ -1,49 +1,96 @@
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff8f1;
-    }
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f3ec;
+  color: #333;
+}
 
-    .banner {
-      background-image: url('https://impulsapopular.com/wp-content/uploads/2019/05/4400-Pasos-para-abrir-una-panader%C3%ADa-de-%C3%A9xito.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 60px 60px;
-    }
+/* Navbar personalizado */
+.navbar {
+  background-color: #6c4c41 !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .banner h2 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
 
-    .banner p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
+.navbar .nav-link {
+  color: #fcebd5 !important;
+  transition: color 0.3s ease;
+}
 
-    .banner a {
-      background-color: #ffc107;
-      color: #000;
-      padding: 10px 25px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
+.navbar .nav-link:hover {
+  color: #ffcb74 !important;
+}
 
-    .carousel-item img {
-      object-fit: cover;
-      height: 500px;
-    }
+/* Botón de pedido */
+.btn-warning {
+  background-color: #f8b739;
+  border: none;
+  font-weight: bold;
+}
 
-    footer {
-      background-color: #343a40;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+.btn-warning:hover {
+  background-color: #e8a12c;
+}
+
+/* Título de sección */
+h2 {
+  font-size: 2.2rem;
+  color: #6c4c41;
+  font-weight: bold;
+}
+
+/* Cards de productos */
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Precio */
+.card .text-success {
+  font-size: 1.2rem;
+}
+
+/* Botón agregar */
+.btn-success {
+  background-color: #a97142;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-success:hover {
+  background-color: #8d5d35;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
